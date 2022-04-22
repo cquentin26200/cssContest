@@ -1,0 +1,26 @@
+header nav:first-of-type {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+header nav div {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+header nav:first-of-type a {
+    color: var(--color-white);
+}
+
+header nav:first-of-type li+li:not(header nav:first-of-type li:last-of-type) {
+    padding: 0 2rem;
+    height: 2.5rem;
+}
+
+header nav:first-of-type ul li {
+    display: flex;
+    align-items: center;
+}

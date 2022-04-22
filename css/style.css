@@ -1,3 +1,39 @@
-li {
-    
+@import '/css/header.css';
+@import '/css/main.css';
+@import '/css/footer.css';
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: black;
+    --color-white: white;
+}
+
+body {
+    color: var(--color-black);
+    font-size: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.width {
+    width: 100%;
 }
