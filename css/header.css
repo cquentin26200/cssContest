@@ -1,26 +1,133 @@
+header, header a {
+    font-family: GeoSansLight;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 header nav:first-of-type {
     background-color: var(--color-black);
     color: var(--color-white);
-    text-transform: uppercase;
 }
 
 header nav div {
     justify-content: space-between;
     align-items: center;
-    max-width: 975px;
+    max-width: 95%;
     margin: 0 auto;
+    height: 2rem;
+    font-size: .6rem;
+    letter-spacing: 3px;
 }
 
 header nav:first-of-type a {
     color: var(--color-white);
 }
 
+header nav:first-of-type a:hover {
+    color: #ccc;
+}
+
 header nav:first-of-type li+li:not(header nav:first-of-type li:last-of-type) {
     padding: 0 2rem;
-    height: 2.5rem;
 }
 
 header nav:first-of-type ul li {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+
+header nav:first-of-type ul:first-of-type {
+    width: 80%;
+}
+
+header nav:first-of-type ul:last-of-type {
+    width: 20%;
+}
+
+header nav a.disney span {
+    font-size: .8rem;
+}
+
+header nav:last-of-type div {
+    height: 50px;
+    font-size: 0.875rem;
+}
+
+header nav:last-of-type a {
+    color: var(--color-black);
+}
+
+header nav:last-of-type ul:last-of-type {
+    width: 10%;
+    justify-content: flex-end;
+}
+
+header nav:last-of-type ul:first-of-type {
+    width: 80%;
+    justify-content: center;
+}
+
+header nav:last-of-type ul:first-of-type li {
+    padding: 0px 1rem;
+    letter-spacing: 0.1875rem;
+}
+
+header nav:last-of-type a.menu-burger-header {
+    flex-direction: column;
+}
+
+header nav:last-of-type a.menu-burger-header span {
+    content: "";
+    width: 1.2rem;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--color-black);
+    margin: 4px 0;
+}
+
+header nav:last-of-type a.menu-burger-header:after {
+    content: "";
+    width: 1.2rem;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--color-black);
+}
+
+header nav:last-of-type a.menu-burger-header::before {
+    content: "";
+    width: 1.2rem;
+    height: 1px;
+    display: inline-block;
+    background-color: var(--color-black);
+}
+
+header nav:last-of-type a:hover {
+    color: #999;
+}
+
+header nav:last-of-type ul:last-of-type li:last-of-type {
+    padding-left: 1.5rem;
+}
+
+header nav:last-of-type ul:last-of-type li:first-of-type {
+    padding-right: 1rem;
+}
+
+header .void {
+    height: 350px;
+}
+
+main ul.planet-possible a {
+    color: var(--color-white);
+}
+
+main ul.planet-possible {
+    background-image: url(https://static.nationalgeographic.fr/files/styles/image_3200/public/header_1.jpg?w=1600&h=900);
+    background-size: contain;
+    height: 43.4rem;
+}
+
+main ul.planet-possible li:last-of-type {
+    font-size: 2.125rem;
 }

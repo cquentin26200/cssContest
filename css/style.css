@@ -1,39 +1,62 @@
-@import '/css/header.css';
-@import '/css/main.css';
-@import '/css/footer.css';
+@import "/css/header.css";
+@import "/css/main.css";
+@import "/css/footer.css";
+
+@font-face {
+  font-family: "Avenir";
+  src: url("/font/Avenir-Roman.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GeoSansLight";
+  src: url("/font/GeosansLight.ttf") format("woff2");
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --color-black: black;
-    --color-white: white;
+  --color-black: black;
+  --color-white: white;
 }
 
 body {
-    color: var(--color-black);
-    font-size: 1rem;
+  color: var(--color-black);
+  font-size: 1rem;
+  font-family: Avenir;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .width {
-    width: 100%;
+  width: 100%;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
