@@ -19,6 +19,7 @@
 :root {
   --color-black: black;
   --color-white: white;
+  --color-hover: #999;
 }
 
 body {

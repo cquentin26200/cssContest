@@ -1,0 +1,50 @@
+main ul.planet-possible a {
+    color: var(--color-white);
+}
+
+main ul.planet-possible {
+    background-image: url(https://static.nationalgeographic.fr/files/styles/image_3200/public/header_1.jpg?w=1600&h=900);
+    background-size: contain;
+    cursor: pointer;
+    height: 55.6vw;
+    flex-direction: column;
+    padding: 0 142px 40px 90px;
+    justify-content: flex-end;
+}
+
+main ul.planet-possible li:last-of-type {
+    font-size: 2.125rem;
+    font-weight: bold;
+}
+
+main ul.planet-possible li a:last-of-type:hover, main ul.planet-possible:hover main ul.planet-possible li a{
+    color: var(--color-hover);
+}
+
+main .otherLink {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    padding-bottom: 15px;
+}
+
+main .otherLink::after {
+    content: "";
+    display: inline-block;
+    border-left: 1px white solid;
+    height: 15px;
+    margin-left: 20px;
+}
+
+main .otherLink::before {
+    content: "";
+    display: inline-block;
+    border-right: 1px white solid;
+    height: 15px;
+    margin-right: 20px;
+}
+
+main .otherLink:hover {
+    text-decoration: underline;
+}
+
+
