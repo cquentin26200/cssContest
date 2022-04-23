@@ -9,7 +9,7 @@ header nav:first-of-type {
     color: var(--color-white);
 }
 
-header nav div:not(header .searchBar div) {
+header nav div:not(header .searchBar div, header .newsLetter div, header .newsLetter) {
     justify-content: space-between;
     align-items: center;
     max-width: 95%;
@@ -134,7 +134,7 @@ header .searchBar input[type="search"] {
     border-bottom: 1px solid var(--color-white);
 }
 
-header .searchBar {
+header .searchBar, header .newsLetter {
     position: fixed;
     top: 0;
     left: 0;
@@ -166,16 +166,16 @@ header .searchBar span {
     margin-right: 2rem;
 }
 
-header .searchBar .crossMenuHeader, header .searchBar .crossMenuHeader::after {
+header .searchBar .crossMenuHeader, header .searchBar .crossMenuHeader::after, header .newsLetter .crossMenuHeader, header .newsLetter .crossMenuHeader::after {
     content: "";
     display: inline-block;
     width: 1px;
     height: 25px;
 
-    background-color: white;
+    background-color: var(--color-white);
 }
 
-header .searchBar .crossMenuHeader {
+header .searchBar .crossMenuHeader, header .newsLetter .crossMenuHeader {
     transform: rotateZ(45deg);
     position: absolute;
     top: 30px;
@@ -183,10 +183,147 @@ header .searchBar .crossMenuHeader {
     cursor: pointer;
 }
 
-header .searchBar .crossMenuHeader::after {
+header .searchBar .crossMenuHeader::after, header .newsLetter .crossMenuHeader::after {
     transform: rotateZ(-90deg);
 }
 
-header .activeSearchBar {
+header .activeSearchBar, header .newsLetter {
     z-index: 1000;
+}
+
+header .newsLetter {
+    cursor: default;
+    flex-direction: column;
+    font-family: Avenir;
+}
+
+header .newsLetter .register {
+    letter-spacing: 2.5px;
+    color: rgb(120, 120, 120);
+    font-size: 0.875rem;
+    margin: 0;
+    text-align: center;
+    cursor: default;
+}
+
+header .newsLetter h3 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 15px 0 25px;
+    text-align: center;
+}
+
+header nav .newsLetter h3 span {
+    font-size: 1.875rem;
+}
+
+header nav .newsLetter p:nth-of-type(2):not(header nav .newsLetter .errorForm p) {
+    text-transform: none;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color-white);
+    font-weight: normal;
+}
+
+header nav .containerNewsletter {
+    max-width: 525px;
+    margin: 0 auto;
+    padding: 0 30px 100px;
+}
+
+header nav .newsLetter input[name="email"] {
+    outline: none;
+    width: 305px;
+    font-weight: bold;
+    height: 49px;
+    font-size: 1rem;
+    border: none;
+    text-indent: 15px;
+    letter-spacing: 3px;
+    text-transform: unset;
+}
+
+header nav .newsLetter div p:not(header nav .newsLetter div p:nth-of-type(2), header nav .newsLetter .register, header nav .newsLetter .errorForm p) {
+    color: rgb(120, 120, 120);
+    letter-spacing: 2.5px;
+    font-size: 0.75rem;
+    margin: 0 0 0 10px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+header nav .newsLetter div p:not(header nav .newsLetter div p:nth-of-type(2), header nav .newsLetter .register, header nav .newsLetter .errorForm p):hover {
+    color: var(--color-white);
+}
+
+
+header nav .newsLetter form div:not(header nav .newsLetter form div:first-of-type) {
+    display: flex;
+    align-items: baseline;
+}
+
+header nav .newsLetter input[name="submit"] {
+    outline: none;
+    width: 160px;
+    font-weight: bold;
+    padding: 0;
+    color: var(--color-white);
+    background: rgb(51, 51, 51);
+    border: none;
+    letter-spacing: 3px;
+    text-transform: unset;
+}
+
+header nav .newsLetter .checkbox {
+    content: "";
+    display: inline-block;
+    border: 1px solid rgb(51, 51, 51);;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header nav .newsLetter div:first-of-type {
+    margin: 55px 0 25px 0;
+}
+
+header nav .newsLetter .selected {
+    background-color: yellow;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 9px;
+    transform: rotateZ(25deg) translateY(-6px);
+    position: fixed;
+}
+
+header nav .newsLetter .selected::after {
+    background-color: yellow;
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 6px;
+    transform: rotateZ(-74deg) translateX(1px) translateY(-3px);
+}
+
+header nav .newsLetter .birdOne {
+    top: 7rem;
+    left: 30px;
+    position: absolute;
+}
+
+header nav .newsLetter .birdTwo {
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
+}
+
+header nav .newsLetter div .errorHeader:not(header nav .newsLetter div p:nth-of-type(2), header nav .newsLetter .register, header nav .newsLetter .errorForm p) {
+    letter-spacing: 3px;
+    line-height: 1.5;
+    font-style: normal;
+    font-size: 0.625rem;
+    margin-bottom: 20px;
+    color: rgb(252, 67, 73);
+    flex-direction: column;
 }

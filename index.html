@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>css Contest</title>
-    <script
-      src="https://kit.fontawesome.com/affdc3fe7d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="flex uppercase">
-        <div class="flex width">
-          <ul class="flex">
-            <li><a href="#" class="disney width">magazines</a></li>
-            <li> <a href="#">newsletter</a></li>
-            <li> <a href="#">télévision</a></li>
-          </ul>
-          <ul>
-            <li> <a href="#" class="disney">disney<span>+</span></li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>css Contest</title>
+  <script src="https://kit.fontawesome.com/affdc3fe7d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="flex uppercase">
+      <div class="flex width">
+        <ul class="flex">
+          <li><a href="https://www.nationalgeographic.fr/abonnements-national-geographic" target="blank"
+              class="disney width">magazines</a></li>
+          <li><a href="#" class="activeNewsLetter">newsletter</a></li>
+          <li> <a
+              href="https://www.nationalgeographic.fr/video/programmes-tv-national-geographic-national-geographic-wild"
+              target="blank">télévision</a></li>
+        </ul>
+        <ul>
+          <li> <a
+              href="https://www.disneyplus.com/fr-fr/welcome/stream?cid=DTCI-Synergy-NatGeoPartners-Site-Acquisition-FRSustain-FR-DisneyPlus-DisneyPlus-FR-NavLink-NationalGeographic.fr_sustain_navmenu-NA"
+              target="blank" class="disney">disney<span>+</span></a></li>
+        </ul>
+      </div>
+      <div class="newsLetter flex  align-center">
+        <div class="containerNewsletter">
+          <img src="/img/bird(1).PNG" alt="" class="birdOne">
+          <img src="/img/bird(2).PNG" alt="" class="birdTwo">
+          <p class="register uppercase">s'enregistrer</p>
+          <h3>recevoir notre <span class="block">newsletter</span> <span class="block">hebdomadaire</span></h3>
+          <p>Laissez-nous votre adresse mail pour recevoir les mises à jour National Geographic</p>
+          <form>
+            <div class="flex">
+              <input type="email" name="email" id="email" placeholder="enter your email">
+              <input type="submit" id="submit" name="submit" value="s'enregistrer">
+            </div>
+            <div>
+              <span class="checkbox validationConfidentiality"></span>
+              <p>en souscrivant à la newsletter, je déclare avoir lu et compris la politique de confidentialité *</p>
+            </div>
+            <div>
+              <span class="checkbox validationAge"></span>
+              <p>j'ai plus de 15 ans *</p>
+            </div>
+            <div>
+              <span class="checkbox"></span>
+              <p>j'accepte que the walt disney company ltd. communique mes données personnelles à ses sociétés affiliées
+                ainsi qu'à des sociétés tierces du même secteur d'activité (voyage, tourisme, loisir, photographies,
+                sciences et technologies…) pour m'envoyer des communications commerciales concernant leurs produits et
+                services.</p>
+            </div>
+            <div>
+              <span class="checkbox"></span>
+              <p>j'accepte que the walt disney company ltd. utilise mes données personnelles pour m'envoyer des
+                communications commerciales concernant ses produits et services (exemple: newsletter)</p>
+            </div>
+            <div class="errorForm errorHeader">
+              <p class="errorForFields"></p>
+              <p class="errorForEmail"></p>
+            </div>
+          </form>
         </div>
-      </nav>
-      <nav class="secondNavHeader width">
-        <div class="flex align-center">
+        <span class="crossMenuHeader"></span>
+      </div>
+    </nav>
+    <nav class="secondNavHeader width">
+      <div class="flex align-center">
         <a href="#"><img src="/img/logo.PNG" alt=""></a>
         <ul class="flex listHeader">
           <li><a href="#">histoire</a></li>
@@ -54,423 +98,452 @@
           </form>
         </ul>
       </div>
-      </nav>
-      <div class="pub">
-        <a href="https://www.rolex.org/fr/rolex-awards/application?cmpid=dsp_ROLEX_INTL_PerpetualPlanet-2023RAERecruiting_2022_FR_rlx2201939" target="blank"><img src="/img/pub/rolex(2).PNG" alt=""></a>
-      </div>
-    </header>
-    <main>
-      <ul class="planet-possible flex">
-        <li><a href="#" class="otherLink uppercase flex align-center">planet possible</a></li>
-        <li><a href="#" class="capitalize">planet possible</a></li>
-      </ul>
-      <section>
-        <h1>journée de la terre</h1>
-        <div>
-          <div>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/waterfall-5365926-1.jpg?w=1600&h=1200"
-              alt=""
-            />
-            <a href="#" class="otherLink"><h4>environnement</h4></a>
-            <h3>
-              National Géographic Consommant une énergie 100% renouvelable
-              est-elle possible ?
-            </h3>
-          </div>
-          <div>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/istock-488411384.jpg?w=1600&h=900"
-              alt=""
-            />
-            <a href="#" class="otherLink"><h4>environnement</h4></a>
-            <h3>
-              National Géographic Consommant une énergie 100% renouvelable
-              est-elle possible ?
-            </h3>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
-              alt=""
-            />
-            <a href="#" class="otherLink"><h4>environnement</h4></a>
-            <h3>
-              National Géographic célèbre la journée de la Terre à Disneyland
-              Paris
-            </h3>
-          </div>
-          <div>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/usine-de-charbon_pollution_ng259_.jpg?w=1600&h=900"
-              alt=""
-            />
-            <a href="#" class="otherLink"><h4>environnement</h4></a>
-            <h3>
-              National Géographic Consommant une énergie 100% renouvelable
-              est-elle possible ? Paris
-            </h3>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h2>les + récents</h2>
-        <div>
-          <img
-            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/cat-rescued-from-korosten-ukraine-peta-germany.JPG?w=1600&h=900"
-            alt=""
-          />
-          <a href="#" class="otherLink">animaux</a>
-          <h4>
-            <a href="#"
-              >National Géographic Consommant une énergie 100% renouvelable
-              est-elle possible ? Paris</a
-            >
-          </h4>
-        </div>
-        <div>
-          <img
-            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/mm9847-_211214_0691.jpg?w=1600&h=900"
-            alt=""
-          />
-          <a href="#" class="otherLink">animaux</a>
-          <h4>
-            <a href="#"
-              >National Géographic Consommant une énergie 100% renouvelable
-              est-elle possible ? Paris</a
-            >
-          </h4>
-        </div>
-        <div>
-          <img
-            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/dragon-de-mer-rubanehippocampeng271_0.jpg?w=1600&h=900"
-            alt=""
-          />
-          <a href="#" class="otherLink">animaux</a>
-          <h4>
-            <a href="#"
-              >National Géographic Consommant une énergie 100% renouvelable
-              est-elle possible ? Paris</a
-            >
-          </h4>
-        </div>
-      </section>
+    </nav>
+    <div class="pub">
+      <a href="https://www.rolex.org/fr/rolex-awards/application?cmpid=dsp_ROLEX_INTL_PerpetualPlanet-2023RAERecruiting_2022_FR_rlx2201939"
+        target="blank"><img src="/img/pub/rolex(2).PNG" alt=""></a>
+      <img src="http://www.w3.org/2000/svg" alt="">
+    </div>
+  </header>
+  <main>
+    <ul class="planet-possible flex">
+      <li><a href="#" class="otherLink uppercase flex align-center">planet possible</a></li>
+      <li><a href="#" class="capitalize">planet possible</a></li>
+    </ul>
+    <section>
+      <h1>journée de la terre</h1>
       <div>
-        <ul>
-          <li>
-            <a href="#"><h2>photo du jour</h2></a>
-          </li>
-          <li><a href="#">lire la suite</a></li>
-        </ul>
-        <ul>
-          <li>dans la bruyère</li>
-          <li>photographie de jim richardson</li>
-        </ul>
-      </div>
-      <section>
-        <h2>dernière vidéos</h2>
         <div>
-          <ul>
-            <li><a href="#">perpetual planet</a></li>
-            <li>2:38</li>
-          </ul>
-          <h5>Environnement 101 : les océans</h5>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/waterfall-5365926-1.jpg?w=1600&h=1200"
+            alt="" />
+          <a href="#" class="otherLink">
+            <h4>environnement</h4>
+          </a>
+          <h3>
+            National Géographic Consommant une énergie 100% renouvelable
+            est-elle possible ?
+          </h3>
         </div>
+        <div>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/istock-488411384.jpg?w=1600&h=900"
+            alt="" />
+          <a href="#" class="otherLink">
+            <h4>environnement</h4>
+          </a>
+          <h3>
+            National Géographic Consommant une énergie 100% renouvelable
+            est-elle possible ?
+          </h3>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
+            alt="" />
+          <a href="#" class="otherLink">
+            <h4>environnement</h4>
+          </a>
+          <h3>
+            National Géographic célèbre la journée de la Terre à Disneyland
+            Paris
+          </h3>
+        </div>
+        <div>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/usine-de-charbon_pollution_ng259_.jpg?w=1600&h=900"
+            alt="" />
+          <a href="#" class="otherLink">
+            <h4>environnement</h4>
+          </a>
+          <h3>
+            National Géographic Consommant une énergie 100% renouvelable
+            est-elle possible ? Paris
+          </h3>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>les + récents</h2>
+      <div>
         <img
-          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/842163_101_CLIMATE_OCEANS_V07_FR2Subs~~~~~fr~mux~~1.jpg?w=1136&h=639"
-          alt=""
-        />
-        <aside>
-          <div>
-            <ul>
-              <li>
-                <a href="#"><h4>animaux</h4></a>
-              </li>
-              <li>
-                <a href="#"><h5>Environnement 101 : les océans</h5></a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="#"><h4>animaux</h4></a>
-              </li>
-              <li>
-                <a href="#"><h5>Environnement 101 : les océans</h5></a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="#"><h4>animaux</h4></a>
-              </li>
-              <li>
-                <a href="#"><h5>Environnement 101 : les océans</h5></a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="#"><h4>animaux</h4></a>
-              </li>
-              <li>
-                <a href="#"><h5>Environnement 101 : les océans</h5></a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-                <a href="#"><h4>animaux</h4></a>
-              </li>
-              <li>
-                <a href="#"><h5>Environnement 101 : les océans</h5></a>
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </section>
-      <div>
-        <aside>
-          <h2>notre sélection</h2>
-          <div>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/03-dayglow-concert-670.jpeg?w=1600&h=1200"
-              alt=""
-            />
-            <h4>environnement</h4>
-            <h5>Environnement 101 : les océans</h5>
-            <span>1</span>
-          </div>
-          <div>
-            <h4>environnement</h4>
-            <h5>Environnement 101 : les océans</h5>
-            <span>1</span>
-          </div>
-          <div>
-            <h5>Environnement 101 : les océans</h5>
-            <span>1</span>
-          </div>
-          <div>
-            <h4>environnement</h4>
-            <h5>Environnement 101 : les océans</h5>
-            <span>1</span>
-          </div>
-          <div>
-            <h4>environnement</h4>
-            <h5>Environnement 101 : les océans</h5>
-            <span>1</span>
-          </div>
-        </aside>
-        <div>
-          <div>
-            <h2>les + lus</h2>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/couvpresidentielle.jpg?w=1600&h=1200"
-              alt=""
-            />
-            <h4>environnement</h4>
-            <h5>Environnement 101 : les océans</h5>
-          </div>
-          <div>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
-              alt=""
-            />
-            <h4>environnement</h4>
-            <h5>Environnement 101 : les océans</h5>
-          </div>
-          <div>
-            <div>
-              <img
-                src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
-                alt=""
-              />
-              <h4>environnement</h4>
-              <h5>Environnement 101 : les océans</h5>
-            </div>
-            <div>
-              <img
-                src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
-                alt=""
-              />
-              <h4>environnement</h4>
-              <h5>Environnement 101 : les océans</h5>
-            </div>
-          </div>
-        </div>
+          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/cat-rescued-from-korosten-ukraine-peta-germany.JPG?w=1600&h=900"
+          alt="" />
+        <a href="#" class="otherLink">animaux</a>
+        <h4>
+          <a href="#">National Géographic Consommant une énergie 100% renouvelable
+            est-elle possible ? Paris</a>
+        </h4>
       </div>
-      <section>
-        <h2>programmes tv</h2>
-        <div>
-          <img
-            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/morsures-animales.png?w=1600&h=900"
-            alt=""
-          />
-          <a href="#"><h4>environnement</h4></a>
-          <a href="#"><h5>Environnement 101 : les océans</h5></a>
-        </div>
-        <div>
-          <img
-            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/morsure.JPG?w=1600&h=900"
-            alt=""
-          />
-          <a href="#"><h4>environnement</h4></a>
-          <a href="#"><h5>Environnement 101 : les océans</h5></a>
-        </div>
-        <div>
-          <img
-            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/a-lepreuve-dune-tribu.jpg?w=1600&h=900"
-            alt=""
-          />
-          <a href="#"><h4>environnement</h4></a>
-          <a href="#"><h5>Environnement 101 : les océans</h5></a>
-        </div>
-      </section>
-      <ul>
-        <li><h2>prime times</h2></li>
-        <li>national geographic</li>
-        <li><a href="#">national geographic</a></li>
-      </ul>
+      <div>
+        <img
+          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/mm9847-_211214_0691.jpg?w=1600&h=900"
+          alt="" />
+        <a href="#" class="otherLink">animaux</a>
+        <h4>
+          <a href="#">National Géographic Consommant une énergie 100% renouvelable
+            est-elle possible ? Paris</a>
+        </h4>
+      </div>
+      <div>
+        <img
+          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/dragon-de-mer-rubanehippocampeng271_0.jpg?w=1600&h=900"
+          alt="" />
+        <a href="#" class="otherLink">animaux</a>
+        <h4>
+          <a href="#">National Géographic Consommant une énergie 100% renouvelable
+            est-elle possible ? Paris</a>
+        </h4>
+      </div>
+    </section>
+    <div>
       <ul>
         <li>
+          <a href="#">
+            <h2>photo du jour</h2>
+          </a>
+        </li>
+        <li><a href="#">lire la suite</a></li>
+      </ul>
+      <ul>
+        <li>dans la bruyère</li>
+        <li>photographie de jim richardson</li>
+      </ul>
+    </div>
+    <section>
+      <h2>dernière vidéos</h2>
+      <div>
+        <ul>
+          <li><a href="#">perpetual planet</a></li>
+          <li>2:38</li>
+        </ul>
+        <h5>Environnement 101 : les océans</h5>
+      </div>
+      <img
+        src="https://static.nationalgeographic.fr/files/styles/image_3200/public/842163_101_CLIMATE_OCEANS_V07_FR2Subs~~~~~fr~mux~~1.jpg?w=1136&h=639"
+        alt="" />
+      <aside>
+        <div>
           <ul>
-            <li><h2>trésor sous les mers</h2></li>
-            <li><small>vendredi 22, 20:10</small></li>
+            <li>
+              <a href="#">
+                <h4>animaux</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Environnement 101 : les océans</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <h4>animaux</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Environnement 101 : les océans</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <h4>animaux</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Environnement 101 : les océans</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <h4>animaux</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Environnement 101 : les océans</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="#">
+                <h4>animaux</h4>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h5>Environnement 101 : les océans</h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <div>
+      <aside>
+        <h2>notre sélection</h2>
+        <div>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/03-dayglow-concert-670.jpeg?w=1600&h=1200"
+            alt="" />
+          <h4>environnement</h4>
+          <h5>Environnement 101 : les océans</h5>
+          <span>1</span>
+        </div>
+        <div>
+          <h4>environnement</h4>
+          <h5>Environnement 101 : les océans</h5>
+          <span>1</span>
+        </div>
+        <div>
+          <h5>Environnement 101 : les océans</h5>
+          <span>1</span>
+        </div>
+        <div>
+          <h4>environnement</h4>
+          <h5>Environnement 101 : les océans</h5>
+          <span>1</span>
+        </div>
+        <div>
+          <h4>environnement</h4>
+          <h5>Environnement 101 : les océans</h5>
+          <span>1</span>
+        </div>
+      </aside>
+      <div>
+        <div>
+          <h2>les + lus</h2>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/couvpresidentielle.jpg?w=1600&h=1200"
+            alt="" />
+          <h4>environnement</h4>
+          <h5>Environnement 101 : les océans</h5>
+        </div>
+        <div>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
+            alt="" />
+          <h4>environnement</h4>
+          <h5>Environnement 101 : les océans</h5>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
+              alt="" />
+            <h4>environnement</h4>
+            <h5>Environnement 101 : les océans</h5>
+          </div>
+          <div>
+            <img
+              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/01surprisingcountries.jpg?w=1600&h=900"
+              alt="" />
+            <h4>environnement</h4>
+            <h5>Environnement 101 : les océans</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h2>programmes tv</h2>
+      <div>
+        <img
+          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/morsures-animales.png?w=1600&h=900"
+          alt="" />
+        <a href="#">
+          <h4>environnement</h4>
+        </a>
+        <a href="#">
+          <h5>Environnement 101 : les océans</h5>
+        </a>
+      </div>
+      <div>
+        <img src="https://static.nationalgeographic.fr/files/styles/image_3200/public/morsure.JPG?w=1600&h=900"
+          alt="" />
+        <a href="#">
+          <h4>environnement</h4>
+        </a>
+        <a href="#">
+          <h5>Environnement 101 : les océans</h5>
+        </a>
+      </div>
+      <div>
+        <img
+          src="https://static.nationalgeographic.fr/files/styles/image_3200/public/a-lepreuve-dune-tribu.jpg?w=1600&h=900"
+          alt="" />
+        <a href="#">
+          <h4>environnement</h4>
+        </a>
+        <a href="#">
+          <h5>Environnement 101 : les océans</h5>
+        </a>
+      </div>
+    </section>
+    <ul>
+      <li>
+        <h2>prime times</h2>
+      </li>
+      <li>national geographic</li>
+      <li><a href="#">national geographic</a></li>
+    </ul>
+    <ul>
+      <li>
+        <ul>
+          <li>
+            <h2>trésor sous les mers</h2>
+          </li>
+          <li><small>vendredi 22, 20:10</small></li>
+        </ul>
+        <ul>
+          <li>
+            <h2>trésor sous les mers</h2>
+          </li>
+          <li><small>vendredi 22, 20:10</small></li>
+        </ul>
+        <ul>
+          <li>
+            <h2>trésor sous les mers</h2>
+          </li>
+          <li><small>vendredi 22, 20:10</small></li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <img src="" alt="" />
+      <p>Lorem, ipsum amet consectetur adipisicing elit.</p>
+      <div>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+      </div>
+    </div>
+    <div>
+      <h6>national geographic</h6>
+      <div>
+        <a href="#">
+          <h4>environnement</h4>
+        </a>
+        <h2>national geographic</h2>
+        <p>national geographic</p>
+        <div>
+          <p>
+            Le mont Roraima s’élève dans la forêt tropicale à la frontière
+            entre le Guyana, le Brésil et le Venezuela. Les habitants ont
+            donné à ce type de montagnes tabulaires le nom de « tepui ».
+            <span>national geographic</span>
+          </p>
+          <ul>
+            <li>
+              Lorem, ipsum amet consectetur adipisicing elit.Lorem,
+              ipsum amet consectetur adipisicing elit.
+            </li>
+            <li>
+              Lorem, ipsum amet consectetur adipisicing elit.Lorem,
+              ipsum amet consectetur adipisicing elit.
+            </li>
+            <li>
+              Lorem, ipsum amet consectetur adipisicing elit.Lorem,
+              ipsum amet consectetur adipisicing elit.
+            </li>
+            <li>
+              Lorem, ipsum amet consectetur adipisicing elit.Lorem,
+              ipsum amet consectetur adipisicing elit.
+            </li>
+            <li>
+              Lorem, ipsum amet consectetur adipisicing elit.Lorem,
+              ipsum amet consectetur adipisicing elit.
+            </li>
+          </ul>
+          <img
+            src="https://static.nationalgeographic.fr/files/styles/image_3200/public/hoogmoedvenezuelang271.jpg?w=854&h=570"
+            alt="" />
+          <p>
+            La grenouille arboricole d’Hoogmoed ou rainette du Roraima (Boana
+            roraima) vit au coeur de broméliacées épiphytes.
+            <span>national geographic</span>
+            <button>s'abonner</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+      </ul>
+      <ul>
+        <p>s'abonner pour suivre</p>
+        <li>
+          <ul>
+            <li><a href="#">s'abonner</a></li>
+            <li><a href="#">s'abonner</a></li>
+            <li><a href="#">s'abonner</a></li>
+            <li><a href="#">s'abonner</a></li>
           </ul>
           <ul>
-            <li><h2>trésor sous les mers</h2></li>
-            <li><small>vendredi 22, 20:10</small></li>
-          </ul>
-          <ul>
-            <li><h2>trésor sous les mers</h2></li>
-            <li><small>vendredi 22, 20:10</small></li>
+            <li></li>
+            <li><a href="#">s'abonner</a></li>
+            <li><a href="#">s'abonner</a></li>
+            <li><a href="#">s'abonner</a></li>
+            <li><a href="#">s'abonner</a></li>
           </ul>
         </li>
       </ul>
-      <div>
-        <img src="" alt="" />
-        <p>Lorem, ipsum amet consectetur adipisicing elit.</p>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-        </div>
-      </div>
-      <div>
-        <h6>national geographic</h6>
-        <div>
-          <a href="#"><h4>environnement</h4></a>
-          <h2>national geographic</h2>
-          <p>national geographic</p>
-          <div>
-            <p>
-              Le mont Roraima s’élève dans la forêt tropicale à la frontière
-              entre le Guyana, le Brésil et le Venezuela. Les habitants ont
-              donné à ce type de montagnes tabulaires le nom de « tepui ».
-              <span>national geographic</span>
-            </p>
-            <ul>
-              <li>
-                Lorem, ipsum amet consectetur adipisicing elit.Lorem,
-                ipsum amet consectetur adipisicing elit.
-              </li>
-              <li>
-                Lorem, ipsum amet consectetur adipisicing elit.Lorem,
-                ipsum amet consectetur adipisicing elit.
-              </li>
-              <li>
-                Lorem, ipsum amet consectetur adipisicing elit.Lorem,
-                ipsum amet consectetur adipisicing elit.
-              </li>
-              <li>
-                Lorem, ipsum amet consectetur adipisicing elit.Lorem,
-                ipsum amet consectetur adipisicing elit.
-              </li>
-              <li>
-                Lorem, ipsum amet consectetur adipisicing elit.Lorem,
-                ipsum amet consectetur adipisicing elit.
-              </li>
-            </ul>
-            <img
-              src="https://static.nationalgeographic.fr/files/styles/image_3200/public/hoogmoedvenezuelang271.jpg?w=854&h=570"
-              alt=""
-            />
-            <p>
-              La grenouille arboricole d’Hoogmoed ou rainette du Roraima (Boana
-              roraima) vit au coeur de broméliacées épiphytes.
-              <span>national geographic</span>
-              <button>s'abonner</button>
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <nav>
-        <ul>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-        </ul>
-        <ul>
-          <p>s'abonner pour suivre</p>
-          <li>
-            <ul>
-              <li><a href="#">s'abonner</a></li>
-              <li><a href="#">s'abonner</a></li>
-              <li><a href="#">s'abonner</a></li>
-              <li><a href="#">s'abonner</a></li>
-            </ul>
-            <ul>
-              <li></li>
-              <li><a href="#">s'abonner</a></li>
-              <li><a href="#">s'abonner</a></li>
-              <li><a href="#">s'abonner</a></li>
-              <li><a href="#">s'abonner</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-          <li><a href="#">s'abonner</a></li>
-        </ul>
-      </nav>
-      <small
-        >Lorem ipsum amet consectetur adipisicing elit. Enim soluta
-        totam possimus eveniet perferendis quas ab dolorem reiciendis, eum
-        ducimus aut quo praesentium vero id quis aliquid voluptate labore
-        consectetur.</small
-      >
-    </footer>
-    <script src="/js/script.js"></script>
-  </body>
+    </nav>
+    <nav>
+      <ul>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+        <li><a href="#">s'abonner</a></li>
+      </ul>
+    </nav>
+    <small>Lorem ipsum amet consectetur adipisicing elit. Enim soluta
+      totam possimus eveniet perferendis quas ab dolorem reiciendis, eum
+      ducimus aut quo praesentium vero id quis aliquid voluptate labore
+      consectetur.</small>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
