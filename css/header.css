@@ -9,7 +9,7 @@ header nav:first-of-type {
     color: var(--color-white);
 }
 
-header nav div {
+header nav div:not(header .searchBar div) {
     justify-content: space-between;
     align-items: center;
     max-width: 95%;
@@ -53,7 +53,7 @@ header nav:last-of-type {
     background-color: var(--color-white);
 }
 
-header nav:last-of-type div {
+header nav:last-of-type div:not(header .searchBar div) {
     height: 50px;
     font-size: 0.875rem;
 }
@@ -62,26 +62,22 @@ header nav:last-of-type a {
     color: var(--color-black);
 }
 
-header nav:last-of-type ul:last-of-type {
-    width: 10%;
-    justify-content: flex-end;
-}
 
 header nav:last-of-type ul:first-of-type {
     width: 80%;
     justify-content: center;
 }
 
-header nav:last-of-type ul:first-of-type li {
+header .listHeader li {
     padding: 0px 1rem;
     letter-spacing: 0.1875rem;
 }
 
-header nav:last-of-type a.menu-burger-header {
+header nav:last-of-type a.menuBurgerHeader {
     flex-direction: column;
 }
 
-header nav:last-of-type a.menu-burger-header span {
+header nav:last-of-type a.menuBurgerHeader span {
     content: "";
     width: 1.2rem;
     height: 1px;
@@ -90,7 +86,7 @@ header nav:last-of-type a.menu-burger-header span {
     margin: 4px 0;
 }
 
-header nav:last-of-type a.menu-burger-header::before {
+header nav:last-of-type a.menuBurgerHeader::before {
     content: "";
     width: 1.2rem;
     height: 1px;
@@ -98,7 +94,7 @@ header nav:last-of-type a.menu-burger-header::before {
     background-color: var(--color-black);
 }
 
-header nav:last-of-type a.menu-burger-header::after {
+header nav:last-of-type a.menuBurgerHeader::after {
     content: "";
     width: 1.2rem;
     height: 1px;
@@ -106,21 +102,83 @@ header nav:last-of-type a.menu-burger-header::after {
     background-color: var(--color-black);
 }
 
-header nav:last-of-type ul:first-of-type a:hover {
+header .listHeader a:hover {
     color: var(--color-hover);
     padding-bottom: 14px;
     box-shadow: inset 0 -6px 0 0 #fc0;
-}
-
-header nav:last-of-type ul:last-of-type li:last-of-type {
-    padding-left: 1.5rem;
-}
-
-header nav:last-of-type ul:last-of-type li:first-of-type {
-    padding-right: 1rem;
 }
 
 header .void {
     height: 350px;
 }
 
+header .menuBurgerHeader {
+    padding-left: 2.5rem;
+}
+
+header .searchBar input[type="search"] {
+    outline: none;
+    background-color: var(--color-black);
+    font-size: 60px;
+    border: none;
+    width: 85%;
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-white);
+}
+
+header .searchBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+header .searchBar input[type="search"] {
+    outline: none;
+    background-color: var(--color-black);
+    border: none;
+    width: 85%;
+    color: var(--color-white);
+}
+
+header .searchBar div:last-of-type {
+    font-size: 60px;
+    display: flex;
+    padding-bottom: 12px;
+    color: var(--color-white);
+    width: 85%;
+    border-bottom: 1px solid var(--color-white);
+}
+
+header .searchBar span {
+    margin-right: 2rem;
+}
+
+header .searchBar .crossMenuHeader, header .searchBar .crossMenuHeader::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+
+    background-color: white;
+}
+
+header .searchBar .crossMenuHeader {
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+header .searchBar .crossMenuHeader::after {
+    transform: rotateZ(-90deg);
+}
+
+header .activeSearchBar {
+    z-index: 1000;
+}

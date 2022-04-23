@@ -1,5 +1,6 @@
 main ul.planet-possible a {
     color: var(--color-white);
+    width: 11.6rem;
 }
 
 main ul.planet-possible {

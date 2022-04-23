@@ -46,6 +46,10 @@ img {
   display: flex;
 }
 
+.none {
+  display: none;
+}
+
 .width {
   width: 100%;
 }
