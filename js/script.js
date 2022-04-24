@@ -92,29 +92,39 @@ checkbox.forEach((element) => {
       validationAge.classList.contains("select") &&
       !validationConfidentiality.classList.contains("select")
     ) {
-        errorFoField.innerHTML = "Vous devez remplir le deuxième champ";
-        validationAge.parentElement.lastElementChild.classList.add("errorHeader");
-        validationConfidentiality.parentElement.lastElementChild.classList.remove("errorHeader");
-      
+      errorFoField.innerHTML = "Vous devez remplir le deuxième champ";
+      validationAge.parentElement.lastElementChild.classList.add("errorHeader");
+      validationConfidentiality.parentElement.lastElementChild.classList.remove(
+        "errorHeader"
+      );
     } else if (
       validationConfidentiality.classList.contains("select") &&
       !validationAge.classList.contains("select")
     ) {
-        errorFoField.innerHTML = "Vous devez remplir le premier champ";
-        validationConfidentiality.parentElement.lastElementChild.classList.add("errorHeader");
-        validationAge.parentElement.lastElementChild.classList.remove("errorHeader");
+      errorFoField.innerHTML = "Vous devez remplir le premier champ";
+      validationConfidentiality.parentElement.lastElementChild.classList.add(
+        "errorHeader"
+      );
+      validationAge.parentElement.lastElementChild.classList.remove(
+        "errorHeader"
+      );
     } else if (
       validationAge.classList.contains("select") &&
       validationConfidentiality.classList.contains("select")
     ) {
-        errorFoField.innerHTML = "Veuillez remplir tous les champs obligatoire";
-        validationAge.parentElement.lastElementChild.classList.add("errorHeader");
-        validationConfidentiality.parentElement.lastElementChild.classList.add("errorHeader");
-
+      errorFoField.innerHTML = "Veuillez remplir tous les champs obligatoire";
+      validationAge.parentElement.lastElementChild.classList.add("errorHeader");
+      validationConfidentiality.parentElement.lastElementChild.classList.add(
+        "errorHeader"
+      );
     } else {
-        errorFoField.innerHTML = "";
-        validationAge.parentElement.lastElementChild.classList.remove("errorHeader");
-        validationConfidentiality.parentElement.lastElementChild.classList.remove("errorHeader");
+      errorFoField.innerHTML = "";
+      validationAge.parentElement.lastElementChild.classList.remove(
+        "errorHeader"
+      );
+      validationConfidentiality.parentElement.lastElementChild.classList.remove(
+        "errorHeader"
+      );
     }
 
     if (fieldsEmail.value == "") {
@@ -123,7 +133,7 @@ checkbox.forEach((element) => {
       errorEmail.innerHTML = "";
     }
     console.log(fieldsEmail.value == "");
-    event.preventDefault()
+    event.preventDefault();
   });
 });
 
@@ -177,10 +187,35 @@ setInterval(() => {
         "https://tpc.googlesyndication.com/simgad/13788261754804701679"
       );
     default:
-      pubLink.setAttribute("href", "https://eu.patagonia.com/fr/fr/shop/alpine-rock-hike-pants?gclid=EAIaIQobChMI0-7U-dSs9wIVWt3VCh3qMQJAEAEYASAAEgK1A_D_BwE");
-      pubImg.setAttribute(
-        "src",
-        "/img/pub/hike.PNG"
+      pubLink.setAttribute(
+        "href",
+        "https://eu.patagonia.com/fr/fr/shop/alpine-rock-hike-pants?gclid=EAIaIQobChMI0-7U-dSs9wIVWt3VCh3qMQJAEAEYASAAEgK1A_D_BwE"
       );
+      pubImg.setAttribute("src", "/img/pub/hike.PNG");
   }
 }, randomNumber(3000, 10000));
+
+const ancre = document.querySelectorAll(".ancre");
+const enterWord = document.querySelector(".enterWord");
+const searchWord = document.querySelector(".searchWord");
+
+function findTag () {
+  switch (enterWord.value) {
+    case "environnement":
+      window.location = "#environnement";
+      searchBar.style.opacity = "0";
+      searchBar.style.zIndex = "-1";
+      break;
+
+    default:
+      break;
+  }
+}
+
+searchWord.addEventListener("click", findTag)
+
+document.addEventListener("keydown", (key) => {
+    if (key.which === 13) {
+      findTag()
+    }
+})

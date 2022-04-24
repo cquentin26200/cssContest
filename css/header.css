@@ -191,6 +191,10 @@ header .activeSearchBar, header .newsLetter {
     z-index: 1000;
 }
 
+header .searchWord {
+    cursor: pointer;
+}
+
 header .newsLetter {
     cursor: default;
     flex-direction: column;
