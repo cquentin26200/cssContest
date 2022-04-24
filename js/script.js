@@ -177,6 +177,10 @@ setInterval(() => {
         "https://tpc.googlesyndication.com/simgad/13788261754804701679"
       );
     default:
-      null;
+      pubLink.setAttribute("href", "https://eu.patagonia.com/fr/fr/shop/alpine-rock-hike-pants?gclid=EAIaIQobChMI0-7U-dSs9wIVWt3VCh3qMQJAEAEYASAAEgK1A_D_BwE");
+      pubImg.setAttribute(
+        "src",
+        "/img/pub/hike.PNG"
+      );
   }
-}, randomNumber(5000, 10000));
+}, randomNumber(3000, 10000));

@@ -319,11 +319,12 @@ header nav .newsLetter .birdTwo {
 }
 
 header nav .newsLetter div .errorHeader:not(header nav .newsLetter div p:nth-of-type(2), header nav .newsLetter .register, header nav .newsLetter .errorForm p) {
+    color: rgb(252, 67, 73);
+}
+
+header nav .newsLetter .errorForm {
+    font-size: 0.625rem;
     letter-spacing: 3px;
     line-height: 1.5;
-    font-style: normal;
-    font-size: 0.625rem;
-    margin-bottom: 20px;
-    color: rgb(252, 67, 73);
     flex-direction: column;
 }
