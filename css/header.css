@@ -9,7 +9,7 @@ header nav:first-of-type {
     color: var(--color-white);
 }
 
-header nav div:not(header .searchBar div, header .newsLetter div, header .newsLetter) {
+header nav div:not(header .searchBar div, header .newsLetter div, header .newsLetter, header .menuBurgerHeader div.changeBackgroundBurger) {
     justify-content: space-between;
     align-items: center;
     max-width: 95%;
@@ -338,8 +338,8 @@ header nav .newsLetter .errorForm {
 }
 
 header .menuBurgerHeader {
-    padding: 5rem;
     justify-content: space-between;
+    background: black;
 }
 
 header nav:last-of-type .menuBurgerHeader a, header .menuBurgerHeader h3 {
@@ -375,7 +375,7 @@ header .menuBurgerHeader li:last-of-type {
     width: 40%;
 }
 
-header .menuBurgerHeader li:last-of-type li {
+header .menuBurgerHeader li:last-of-type ul:first-of-type li {
     font-size: 1.1875rem;
 }
 
@@ -389,6 +389,25 @@ header .menuBurgerHeader .activeSearchBar {
     top: 30px;
     left: 78px;
     cursor: pointer;
+}
+
+header .menuBurgerHeader li:last-of-type ul:last-of-type {
+    font-size: 0.875rem;
+}
+
+header .menuBurgerHeader li:last-of-type ul:last-of-type h3 {
+    font-size: 0.875rem;
+}
+
+header nav:last-of-type .menuBurgerHeader .changeBackgroundBurger {
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    background-image: url(/img/blackSquare.PNG);
+    transition: background-image 0.35s ease-in-out 0s;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 16rem 15rem #000000;
 }
 
 @media screen and (max-width: 950px) {

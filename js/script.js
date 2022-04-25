@@ -258,3 +258,16 @@ activeMenuBurger.addEventListener("click", () => {
   menuBurgerHeader.style.zIndex = "100";
   document.body.style.overflow = "hidden";
 })
+
+//change background in menu burger in header
+
+const pictureOfTheDay = document.querySelector(".pictureOfTheDay");
+const changeBackgroundBurger = document.querySelector(".changeBackgroundBurger");
+
+pictureOfTheDay.addEventListener("mouseenter", () => {
+  changeBackgroundBurger.style.backgroundImage = "url(https://static.nationalgeographic.fr/files/styles/image_3200/public/nationalgeographic_444986_2.jpg?w=1600&h=1067)";
+})
+
+pictureOfTheDay.addEventListener("mouseleave", () => {
+  changeBackgroundBurger.style.backgroundImage = "url(/img/blackSquare.PNG)";
+})
