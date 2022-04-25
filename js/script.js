@@ -47,7 +47,7 @@ const enterWord = document.querySelector(".enterWord");
 crossArrow.forEach((element) => {
   element.addEventListener("click", () => {
     enterWord.value = "";
-    styleForBody()
+    styleForBody();
     newsletter.style.opacity = "0";
     newsletter.style.zIndex = "-1";
   });
@@ -208,7 +208,7 @@ const searchWord = document.querySelector(".searchWord");
 
 const objFindTag = {
   environnement: "envi",
-  animal: "anim"
+  animal: "anim",
 };
 
 function findTag() {
@@ -225,17 +225,11 @@ function findTag() {
 
     default:
       enterWord.value = "";
-      window.location = "http://127.0.0.1:5555/index.html";
-      searchBar.style.position = "fixed";
-      searchBar.style.opacity = "1";
-      searchBar.style.zIndex = "100";
-      document.body.style.overflow = "hidden";
       break;
   }
 }
 
-searchWord.addEventListener("click", findTag);
-
 document.addEventListener("keydown", (key) => {
-  key.which === 13 ? findTag() : null;
+  key.which === 13 ? findTag() : null; 
+  enterWord.value === "" ? key.preventDefault() : null;
 });
