@@ -51,6 +51,7 @@ header nav a.disney span {
 
 header nav:last-of-type {
     background-color: var(--color-white);
+    z-index: 100;
 }
 
 header nav:last-of-type div:not(header .searchBar div) {
@@ -269,8 +270,10 @@ header nav .newsLetter form div:not(header nav .newsLetter form div:first-of-typ
 
 header nav .newsLetter input[name="submit"] {
     outline: none;
-    width: 160px;
+
     font-weight: bold;
+    width: 305px;
+    height: 49px;
     padding: 0;
     color: var(--color-white);
     background: rgb(51, 51, 51);
@@ -332,4 +335,34 @@ header nav .newsLetter .errorForm {
     letter-spacing: 3px;
     line-height: 1.5;
     flex-direction: column;
+}
+
+@media screen and (max-width: 950px) {
+    header nav ul.listHeader li {
+        font-size: 0.625rem;
+    }
+    header nav ul.listHeader {
+        margin-top: 7rem;
+    }
+
+    header nav:last-of-type div a img {
+        max-width: 6rem;
+    }
+
+    header .newsLetter form div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .newsLetter img {
+        display: none;
+    }
+
+    header .newsLetter input[type="email"] {
+        margin-bottom: 15px;
+    }
+
+    header .newsLetter form div:not(header .newsLetter form div:first-of-type)  {
+        flex-direction: row;
+    }
 }

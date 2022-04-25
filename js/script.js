@@ -33,15 +33,23 @@ activeSearchBar.addEventListener("click", () => {
 
 //hide the form of search bar and hide the newletter
 
+function styleForBody() {
+  searchBar.style.opacity = "0";
+  searchBar.style.zIndex = "-1";
+  searchBar.style.position = "absolute";
+  document.body.style.overflow = "visible";
+  enterWord.value = "";
+}
+
 const crossArrow = document.querySelectorAll(".crossMenuHeader");
+const enterWord = document.querySelector(".enterWord");
 
 crossArrow.forEach((element) => {
   element.addEventListener("click", () => {
-    searchBar.style.opacity = "0";
-    searchBar.style.zIndex = "-1";
+    enterWord.value = "";
+    styleForBody()
     newsletter.style.opacity = "0";
     newsletter.style.zIndex = "-1";
-    document.body.style.overflow = "visible";
   });
 });
 
@@ -196,21 +204,12 @@ setInterval(() => {
 }, randomNumber(3000, 10000));
 
 const ancre = document.querySelectorAll(".ancre");
-const enterWord = document.querySelector(".enterWord");
 const searchWord = document.querySelector(".searchWord");
 
 const objFindTag = {
   environnement: "envi",
   animal: "anim"
 };
-
-function styleForBody() {
-  searchBar.style.opacity = "0";
-  searchBar.style.zIndex = "-1";
-  searchBar.style.position = "absolute";
-  document.body.style.overflow = "visible";
-  enterWord.value = "";
-}
 
 function findTag() {
   let enterWorldValue = enterWord.value;

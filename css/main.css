@@ -60,6 +60,7 @@ main h1 {
 main section.theDayOfTheEarth {
     flex-wrap: wrap;
     padding: 0 2.5rem;
+    padding-bottom: 13rem;
 }
 
 main section.theDayOfTheEarth .firstGroup {
@@ -76,6 +77,7 @@ main section.theDayOfTheEarth .secondGroup  {
     width: 41.66666666666667%;
     padding: 1rem;
     flex-direction: column;
+    position: relative;
 }
 
 main section.theDayOfTheEarth h1 {
@@ -90,12 +92,23 @@ main section.theDayOfTheEarth .otherLink::before {
     border-right: 1px solid var(--color-black);
 } 
 
-main section.theDayOfTheEarth .otherLink {
+main section.theDayOfTheEarth .otherLink, main section.theDayOfTheEarth a {
     color: var(--color-black);
+}
+
+main section.theDayOfTheEarth a h3:hover {
+    color: var(--color-hover);
 }
 
 main section.theDayOfTheEarth .otherLink {
     font-family: GeoSansLight;
+}
+
+main section.theDayOfTheEarth img.pub {
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    left: 5rem;
 }
 
 main .otherLink {
@@ -109,6 +122,12 @@ main section h3 {
     letter-spacing: 0.1px;
     line-height: 1.273;
     margin: 0 0 15px 0;
+}
+
+main section.theDayOfTheEarth h3:not(main section.theDayOfTheEarth div:last-of-type div:first-of-type h3) {
+    font-size: 1.75rem;
+    letter-spacing: 0.3px;
+    line-height: 1.214;
 }
 
 main section.theMostLatest {
@@ -156,7 +175,7 @@ main section.theMostLatest div h3 {
 }
 
 main section.theMostLatest div h3:hover {
-    color: #999;
+    color: var(--color-hover);
 }
 
 main section.theMostLatest div img {
