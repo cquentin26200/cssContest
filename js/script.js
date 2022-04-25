@@ -16,7 +16,7 @@ document.addEventListener("scroll", () => {
 
 //show the form of search bar
 
-const activeSearchBar = document.querySelector(".activeSearchBar");
+const activeSearchBar = document.querySelectorAll(".activeSearchBar");
 const searchBar = document.querySelector(".searchBar");
 const divSearchBar = document.querySelector(".searchBar div");
 
@@ -24,13 +24,18 @@ searchBar.style.opacity = "0";
 searchBar.style.zIndex = "-1";
 searchBar.style.position = "absolute";
 
-activeSearchBar.addEventListener("click", () => {
-  searchBar.style.position = "fixed";
-  searchBar.style.opacity = "1";
-  searchBar.style.zIndex = "100";
-  document.body.style.overflow = "hidden";
-});
-
+activeSearchBar.forEach(element => {
+  element.addEventListener("click", () => {
+    searchBar.style.position = "fixed";
+    searchBar.style.opacity = "1";
+    searchBar.style.zIndex = "100";
+    menuBurgerHeader.style.opacity = "0";
+    menuBurgerHeader.style.zIndex = "-1";
+    menuBurgerHeader.style.position = "absolute";
+    document.body.style.overflow = "hidden";
+  });
+  
+})
 //hide the form of search bar and hide the newletter
 
 function styleForBody() {
@@ -43,11 +48,15 @@ function styleForBody() {
 
 const crossArrow = document.querySelectorAll(".crossMenuHeader");
 const enterWord = document.querySelector(".enterWord");
+const menuBurgerHeader = document.querySelector(".menuBurgerHeader");
 
 crossArrow.forEach((element) => {
   element.addEventListener("click", () => {
     enterWord.value = "";
     styleForBody();
+    menuBurgerHeader.style.opacity = "0";
+    menuBurgerHeader.style.zIndex = "-1";
+    menuBurgerHeader.style.position = "absolute";
     newsletter.style.opacity = "0";
     newsletter.style.zIndex = "-1";
   });
@@ -233,3 +242,19 @@ document.addEventListener("keydown", (key) => {
   key.which === 13 ? findTag() : null; 
   enterWord.value === "" ? key.preventDefault() : null;
 });
+
+
+//show menu burger in header
+
+const activeMenuBurger = document.querySelector(".activeMenuBurgerHeader");
+
+menuBurgerHeader.style.opacity = "0";
+menuBurgerHeader.style.zIndex = "-1";
+menuBurgerHeader.style.position = "absolute";
+
+activeMenuBurger.addEventListener("click", () => {
+  menuBurgerHeader.style.position = "fixed";
+  menuBurgerHeader.style.opacity = "1";
+  menuBurgerHeader.style.zIndex = "100";
+  document.body.style.overflow = "hidden";
+})

@@ -168,7 +168,7 @@ header .searchBar span {
     margin-right: 2rem;
 }
 
-header .searchBar .crossMenuHeader, header .searchBar .crossMenuHeader::after, header .newsLetter .crossMenuHeader, header .newsLetter .crossMenuHeader::after {
+header .crossMenuHeader, header .crossMenuHeader::after {
     content: "";
     display: inline-block;
     width: 1px;
@@ -177,7 +177,7 @@ header .searchBar .crossMenuHeader, header .searchBar .crossMenuHeader::after, h
     background-color: var(--color-white);
 }
 
-header .searchBar .crossMenuHeader, header .newsLetter .crossMenuHeader {
+header .crossMenuHeader{
     transform: rotateZ(45deg);
     position: absolute;
     top: 30px;
@@ -185,7 +185,7 @@ header .searchBar .crossMenuHeader, header .newsLetter .crossMenuHeader {
     cursor: pointer;
 }
 
-header .searchBar .crossMenuHeader::after, header .newsLetter .crossMenuHeader::after {
+header .crossMenuHeader::after {
     transform: rotateZ(-90deg);
 }
 
@@ -338,8 +338,7 @@ header nav .newsLetter .errorForm {
 }
 
 header .menuBurgerHeader {
-    z-index: 100;
-    padding: 0 5rem 5rem 5rem;
+    padding: 5rem;
     justify-content: space-between;
 }
 
@@ -356,6 +355,10 @@ header nav:last-of-type .menuBurgerHeader li li+li {
     margin-top: 2rem;
 }
 
+header nav:last-of-type .menuBurgerHeader li ul, header nav:last-of-type .menuBurgerHeader li ul li {
+    width: 100%;
+}
+
 header .menuBurgerHeader h3 {
     font-size: 1rem;
 }
@@ -364,12 +367,28 @@ header .menuBurgerHeader li:first-of-type li {
     font-size: 2rem;
 }
 
+header .menuBurgerHeader li:first-of-type {
+    width: 58%;
+}
+
+header .menuBurgerHeader li:last-of-type {
+    width: 40%;
+}
+
 header .menuBurgerHeader li:last-of-type li {
     font-size: 1.1875rem;
 }
 
 header .menuBurgerHeader li:last-of-type ul:last-of-type, header .menuBurgerHeader li:first-of-type ul:last-of-type {
     margin-top: 5rem;
+}
+
+header .menuBurgerHeader .activeSearchBar {
+    color: var(--color-white);
+    position: absolute;
+    top: 30px;
+    left: 78px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 950px) {
