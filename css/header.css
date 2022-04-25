@@ -151,6 +151,7 @@ header .searchBar input[type="search"] {
     border: none;
     width: 85%;
     color: var(--color-white);
+    text-transform: uppercase;
 }
 
 header .searchBar div:last-of-type {

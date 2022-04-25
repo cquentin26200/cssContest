@@ -199,23 +199,44 @@ const ancre = document.querySelectorAll(".ancre");
 const enterWord = document.querySelector(".enterWord");
 const searchWord = document.querySelector(".searchWord");
 
-function findTag () {
-  switch (enterWord.value) {
-    case "environnement":
+const objFindTag = {
+  environnement: "envi",
+  animal: "anim"
+};
+
+function styleForBody() {
+  searchBar.style.opacity = "0";
+  searchBar.style.zIndex = "-1";
+  searchBar.style.position = "absolute";
+  document.body.style.overflow = "visible";
+  enterWord.value = "";
+}
+
+function findTag() {
+  let enterWorldValue = enterWord.value;
+  switch (true) {
+    case enterWorldValue.startsWith(objFindTag.environnement):
       window.location = "#environnement";
-      searchBar.style.opacity = "0";
-      searchBar.style.zIndex = "-1";
+      styleForBody();
+      break;
+    case enterWorldValue.startsWith(objFindTag.animal):
+      window.location = "#animal";
+      styleForBody();
       break;
 
     default:
+      enterWord.value = "";
+      window.location = "http://127.0.0.1:5555/index.html";
+      searchBar.style.position = "fixed";
+      searchBar.style.opacity = "1";
+      searchBar.style.zIndex = "100";
+      document.body.style.overflow = "hidden";
       break;
   }
 }
 
-searchWord.addEventListener("click", findTag)
+searchWord.addEventListener("click", findTag);
 
 document.addEventListener("keydown", (key) => {
-    if (key.which === 13) {
-      findTag()
-    }
-})
+  key.which === 13 ? findTag() : null;
+});
