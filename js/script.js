@@ -238,9 +238,12 @@ function findTag() {
   }
 }
 
+const searchWorld = document.querySelector(".searchWord");
+searchWord.addEventListener("click", findTag);
+
 document.addEventListener("keydown", (key) => {
-  key.which === 13 ? findTag() : null; 
-  enterWord.value === "" ? key.preventDefault() : null;
+  key.which === 13 ? findTag() : null;
+
 });
 
 
